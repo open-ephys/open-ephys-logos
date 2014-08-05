@@ -61,7 +61,7 @@ var centers_rot =centers;
 
 var drawornot =[1,1,1,1,1,1,1]; 
 for (var i = 0; i < 1000; i++) {
-    drawornot.push(Math.random() <=0.4);
+    drawornot.push(Math.random() <=0.45);
 }
 
 var colors = [];
@@ -148,8 +148,9 @@ freqphase[i][2]=0;
 </head>
 <body>
 <p>
- <canvas id="myCanvas"  style="z-index:2;" resize>
- <div id="logo" style="position:absolute; top:300px; left:100px; z-index:-2; width: 718px; height: 478px;"><img src="oe_text.png"></div>
+
+ 
+ <div id="c" style="position:absolute; top: 40%; left: 50%;"> <div id="logo" style="position:relative; top: -30px; left: -592px; z-index:-2; width: 718px; height: 478px;"><img src="oe_text.png"><canvas id="myCanvas"  style="z-index:2; position: relative;left: -86px;top: -680px;" resize></div>
 </p>
 </body>
 </html>
