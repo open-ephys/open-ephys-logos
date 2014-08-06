@@ -159,7 +159,7 @@ generateConnections(centers);
 
 function onFrame(event) {
 if (event.count%2 == 0) {
-  var tfactor  =2; // set to ~.1 for debug
+  var tfactor  =1; // set to ~.1 for debug
 for (var i = 0; i < ncenters; i++) {
     var dx=Math.sin(((1/tfactor)*0.01*event.time*freqphase[i][0])+freqphase[i][1]);
     var dy=Math.cos(((1/tfactor)*0.01*event.time*freqphase[i][0])+freqphase[i][1])*0.75;
