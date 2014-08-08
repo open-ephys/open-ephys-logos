@@ -31,22 +31,70 @@ for (var i = 0; i < ncenters; i++) {
 
 var centers_rot =centers; 
 
-var drawornot =[1,1,1,1,1,1,1]; 
-for (var i = 0; i < 1000; i++) {
-    drawornot.push(Math.random() <=0.4);
+
+var drawornot = new Array(ncenters);
+for (var i = 0; i < ncenters; i++) {
+    drawornot[i] = new Array(ncenters);
+}
+for (var i = 0; i < ncenters; i++) {
+    for (var j = 0; j < ncenters; j++) {
+          drawornot[i][j]=0;
+    }
 }
 
+for (var i = 0; i < ncenters; i++) {
+	for (var j = 0; j < i; j++) {
+	    if (i<4 & j<4) {
+	        drawornot[i][j]=1;
+	    }else{
+	        if (Math.random()<0.25){
+		    drawornot[i][j]=1;
+	        }
+	    }
+	}
+}
+
+console.log(drawornot);
+
+var N_in = new Array(ncenters);
+for (var i = 0; i < ncenters; i++) {
+    N_in[i]=0;
+	for (var j = 0; j<ncenters; j++) {
+		if ((drawornot[i][j]==1) | (drawornot[j][i]==1)){
+            N_in[i]++;
+		}
+	}
+}
+
+//console.log(N_in);
+
+for (var i = 0; i < ncenters; i++) {
+	if (N_in[i]==1){
+        var foundone=0;
+        for (var j = 0; j<ncenters; j++) {
+            //  drawornot[j][i]=3;
+            if ((N_in[j]>0) & (j!=i)  & (drawornot[i][j]==0) & (drawornot[j][i]==0) & (foundone==0)){
+               drawornot[i][j]=3;
+               N_in[i]++; 
+               foundone=1;
+            }
+        }
+	}
+}
+
+
 var colors = [];
-	colors.push('FBD126');
-	colors.push('24B7E1');
-    colors.push('24B7E1');
-	colors.push('EA6A3F');
-	colors.push('B5B5B6');
-    colors.push('B5B5B6');
-	colors.push('D6AACD');
-	colors.push('7FC244');
-    colors.push('2FB6DF');
-    colors.push('FBD027');
+	colors.push('FBD126'); // yellow
+	colors.push('24B7E1'); // light blue
+	colors.push('24B7E1'); 
+	colors.push('EA6A3F'); // pale red
+	colors.push('B5B5B5'); // grey
+	colors.push('B5B5B5');
+	colors.push('B5B5B5');
+	colors.push('D6AACD'); // pale violet
+	//colors.push('7FC244'); // green
+	colors.push('2FB6DF'); // blue
+
     
     
 
@@ -54,31 +102,34 @@ var connections = new Group();
 function generateConnections(paths) {
     var cdraw=0;
     var ccolor=0;
-	for (var i = 0, l = centers.length; i < l; i++) {
-		for (var j = i - 1; j >= 0; j--) {
-		    cdraw=cdraw+1;
-            if (drawornot[cdraw]) {
-		        ccolor=ccolor+1;
-                var n=(i+j+Math.round(Math.random()*10))%7;  
-                var n=ccolor%7;
+	for (var i = 0; i < ncenters; i++) {
+		for (var j = 0; j < ncenters; j++) {
+                cdraw=cdraw+1;
+                if (drawornot[i][j]>0){
+                    ccolor=ccolor+1;
+                    //var n=(i+j+Math.round(Math.random()*10))%7;  
+                    var n=ccolor%9;
               
-            	// Create a Paper.js Path to draw a line into it:
-            	var path = new Path();
-            	path.strokeColor =  colors[n];
-            	path.strokeWidth= 3;
-	            path.strokeCap= 'round';
-	            path.blendMode= 'multiply';
+                    // Create a Paper.js Path to draw a line into it:
+                    var path = new Path();
+                    
+                    path.strokeColor =  colors[n];
+
+                    path.strokeWidth= 3;
+                    path.strokeCap= 'round';
+                    path.blendMode= 'multiply';
 	
-            	path.moveTo(centers[i]);
-            	path.lineTo( centers[j]);
-                connections.appendTop(path);
+                    path.moveTo(centers[i]);
+                    path.lineTo( centers[j]);
+                    connections.appendTop(path);
                 
-		}
+		    }
 		}
 	}
 }
 
 generateConnections(centers);
+
 
 function onFrame(event) {
 if (event.count%10 == 0) {
