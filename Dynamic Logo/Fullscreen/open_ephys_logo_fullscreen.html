@@ -111,17 +111,17 @@ for (var i = 0; i < ncenters; i++) {
 
 
 var colors = [];
-	colors.push('FBD126');
-	colors.push('24B7E1');
-	colors.push('24B7E1');
-	colors.push('EA6A3F');
+	colors.push('FBD126'); // yellow
+	colors.push('24B7E1'); // light blue
+	colors.push('24B7E1'); 
+	colors.push('EA6A3F'); // pale red
+	colors.push('B5B5B5'); // grey
 	colors.push('B5B5B5');
 	colors.push('B5B5B5');
-	colors.push('B5B5B5');
-	colors.push('D6AACD');
-	colors.push('7FC244');
-	colors.push('2FB6DF');
-	colors.push('FBD027');
+	colors.push('D6AACD'); // pale violet
+	//colors.push('7FC244'); // green
+	colors.push('2FB6DF'); // blue
+
     
     
 
@@ -135,7 +135,7 @@ function generateConnections(paths) {
                 if (drawornot[i][j]>0){
                     ccolor=ccolor+1;
                     //var n=(i+j+Math.round(Math.random()*10))%7;  
-                    var n=ccolor%11;
+                    var n=ccolor%9;
               
                     // Create a Paper.js Path to draw a line into it:
                     var path = new Path();
