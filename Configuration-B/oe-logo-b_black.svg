@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="397.655px" height="257.584px" viewBox="0 -1.781 397.655 257.584" enable-background="new 0 -1.781 397.655 257.584"
+	 xml:space="preserve">
+<g id="Layer_7" display="none">
+	
+		<image display="inline" overflow="visible" width="987" height="587" xlink:href="../../../Downloads/Capture.PNG"  transform="matrix(0.4484 0 0 0.4484 -21.4307 7.0671)">
+	</image>
+</g>
+<g id="Background">
+	<rect y="-1.781" width="397.655" height="257.584"/>
+</g>
+<g id="Layer_5">
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="211.132" y1="32.384" x2="334.855" y2="147.84"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="334.855" y1="147.84" x2="262.673" y2="217.81"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="262.673" y1="217.81" x2="211.132" y2="32.384"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="262.673" y1="217.81" x2="164.769" y2="75.117"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="164.769" y1="75.117" x2="334.855" y2="147.84"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="262.673" y1="217.81" x2="173.155" y2="157.219"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="173.155" y1="157.219" x2="76.155" y2="197.885"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="76.155" y1="197.885" x2="164.769" y2="75.117"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="76.155" y1="197.885" x2="334.855" y2="147.84"/>
+</g>
+<g id="Layer_2">
+	<g>
+		
+			<line fill="none" stroke="#FBD026" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="211.132" y1="32.384" x2="334.855" y2="147.84"/>
+		
+			<line fill="none" stroke="#007A8E" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="262.673" y1="217.81" x2="211.132" y2="32.384"/>
+		
+			<line fill="none" stroke="#EA6A3F" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="334.855" y1="147.84" x2="164.769" y2="75.117"/>
+		
+			<line fill="none" stroke="#D6AACD" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="76.155" y1="197.885" x2="164.769" y2="75.117"/>
+		
+			<line fill="none" stroke="#007A8E" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="164.769" y1="75.117" x2="262.673" y2="217.81"/>
+		
+			<line fill="none" stroke="#007A8E" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="173.155" y1="157.219" x2="262.673" y2="217.81"/>
+		
+			<line fill="none" stroke="#2FB6DF" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="334.855" y1="147.84" x2="262.673" y2="217.81"/>
+		
+			<line fill="none" stroke="#B6B6B7" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="334.855" y1="147.84" x2="76.155" y2="197.885"/>
+		
+			<line fill="none" stroke="#007A8E" stroke-width="13" stroke-linecap="round" stroke-miterlimit="10" x1="76.155" y1="197.885" x2="173.155" y2="157.219"/>
+	</g>
+</g>
+<g id="Text">
+	
+		<text transform="matrix(1 0 0 1 -4.8452 166.2078)" fill="#FFFFFF" font-family="'Miso-Bold'" font-size="127.8548" letter-spacing="-5">open ephys</text>
+</g>
+</svg>
