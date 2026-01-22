@@ -150,6 +150,10 @@
     <ResourceCompile Include="icon-dll.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\Configuration-A\oe-logo-color_a.ico" />
+    <Image Include="..\..\Configuration-A\oe-logo-color_a_whitebg.ico" />
+    <Image Include="..\..\Configuration-A\oe-logo-only-color_a.ico" />
+    <Image Include="..\..\Configuration-A\oe-logo-only-color_a_whitebg.ico" />
     <Image Include="..\Configuration-A\oe-logo-color_a.ico" />
     <Image Include="..\Configuration-A\oe-logo-color_a_whitebg.ico" />
     <Image Include="..\Configuration-A\oe-logo-only-color_a.ico" />

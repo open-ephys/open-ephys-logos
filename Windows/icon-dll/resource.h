@@ -1,12 +1,11 @@
 //{{NO_DEPENDENCIES}}
-// Archivo de inclusión generado de Microsoft Visual C++.
-// Usado por icon-dll.rc
+// Microsoft Visual C++ generated include file.
+// Used by icon-dll.rc
 //
 #define IDI_ICON1                       101
 #define IDI_ICON2                       102
 #define IDI_ICON3                       103
 #define IDI_ICON4                       104
-#define IDI_ICON5                       105
 
 // Next default values for new objects
 // 
